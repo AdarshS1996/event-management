@@ -1,9 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    font-family: 'Poppins';
-    scroll-behavior: smooth;
-}
-
-.btn-primary {
-    border-radius: 20px 20px 20px 0px !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;   
+    color: #ffffff;
 }
