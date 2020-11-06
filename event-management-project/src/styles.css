@@ -2,6 +2,9 @@
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    scroll-behavior: smooth;   
-    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }

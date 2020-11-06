@@ -1,6 +1,10 @@
 .carousel {
     min-height: 100vh;
   }
+
+  .carousel-inner {
+    min-height: 100vh;
+  }
   
   .carousel-item {
     height: 95vh;
@@ -33,11 +37,13 @@
 .carousel-caption {
   left: 5%;
   text-align: left;
-  bottom: 75px;
+  bottom: -45px;
 }
 
 .carousel-indicators {
-  margin-right: 5%;
+  margin-right: 1%;
+  margin-left: 52%;
+  margin-bottom: 3rem;
   justify-content: flex-end;
 }
 
@@ -49,7 +55,7 @@
 }
 
 .carousel-indicators .active .progress-number {
-  font-size: 36px !important;
+  font-size: 46px !important;
   color: rgb(174, 145, 50);
 }
 
@@ -57,8 +63,12 @@
   color: #ffffff;
   border-color: #ffffff;
   border-radius: 0px;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   text-transform: uppercase;
+  font-size: 1rem;
+  width: fit-content;
+  font-weight: bold;
+  margin-top: 1.5rem;
 }
 
 .btn-outline-secondary:hover {
@@ -67,34 +77,10 @@
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-@media screen and (max-width: 767px) {
-  .carousel-item:nth-child(1) {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7468069698033708) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0) 100%),  url(../../assets/back_4.jpg);
-    background-size: cover;
-    background-position: top center;
-}
-
-.carousel-item:nth-child(2) {
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7468069698033708) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0) 100%),  url(../../assets/back_1.jpg);
-  background-size: cover;
-  background-position: top center;
-}
-
-.carousel-item:nth-child(3) {
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7468069698033708) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0) 100%),  url(../../assets/back_3.jpg);
-  background-size: cover;
-  background-position: top center;
-}
-
-.carousel-item {
-  height: 100vh;
-}
-}
- 
-/* PROGRESS BAR */
 .progress-number {
   color: #ffffff;
   font-weight: bold;
@@ -103,7 +89,7 @@ h1 {
 
 .bar {
   border: 0.1px solid gray;
-  height: 4px;
+  height: 3px;
   width: 100%;
   border-radius: 5px;
   opacity: 0.75;
@@ -128,106 +114,163 @@ h1 {
   }
 }
 
-/* NAVBAR STYLES */
-.navbar {
-  position: fixed;
-  z-index: 99999;
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .carousel-item:nth-child(1) {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7468069698033708) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0) 100%),  url(../../assets/back_4.jpg);
+    background-size: cover;
+    background-position: top center;
 }
 
-.navbar-light .navbar-toggler {
-  border: none !important;
+.carousel-item:nth-child(2) {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7468069698033708) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0) 100%),  url(../../assets/back_1.jpg);
+  background-size: cover;
+  background-position: top center;
 }
 
-.navbar:hover {
-  background: #ffffff;
-  box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.3);
+.carousel-item:nth-child(3) {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7468069698033708) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0) 100%),  url(../../assets/back_3.jpg);
+  background-size: cover;
+  background-position: top center;
 }
 
-.nav-link {
-  padding: 0.2rem 0.5rem !important;
-  margin-left: 2rem;
-  color: #ffffff !important;
-  font-weight: bold;
+.carousel-item {
+  height: 100vh;
 }
 
-.nav-link:hover {
-  border-left: 5px solid rgb(17, 87, 64);
-  color: rgb(61, 64, 66) !important;
-  transition: border 0.2s;
+.carousel-caption {
+  left: 5%;
+  text-align: left;
+  top: 300px;
 }
 
-.navbar:hover div ul li .nav-link, .navbar:hover div ul li .nav-link i, .navbar:hover button i { 
-  color: rgb(61, 64, 66) !important; 
+.carousel-indicators {
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-bottom: 0rem;
+  justify-content: flex-end;
 }
 
-ul .active {
-  border-left: 5px solid rgb(17, 87, 64);
+h1 {
+  font-size: 2rem;
+}
+
+.carousel-indicators .active {
+  position: absolute;
+  left: 5%;
+}
+
+.carousel-indicators li {
+  width: 80px;
+  height: 70px;
+}
+
+.carousel-indicators li .progress-number .bar {
+  display: none;
+}
+
+.carousel-indicators .active {
+  width: 275px;
+  height: 70px;
+  bottom: 40px;
+}
+
+.carousel-indicators .active .progress-number .bar {
+  display: block;
+  position: absolute;
+  transform: rotateZ(-90deg);
+  left: -155px;
+  bottom: 150px;
+  height: 8px;
+  border: none;
+  border-radius: 0px;
+  background: rgba(255,255,255,0.25);
+}
 }
 
 /* CONTENT BOX ANIMATION BORDER */
 @keyframes bg {
   0% {
-      background-size:    0 3px,
-                          3px 0,
-                          0 3px,
-                          3px 0;
+      background-size:    0 8px,
+                          8px 0,
+                          0 8px,
+                          8px 0;
   }
   25% {
-      background-size:    100% 3px,
-                          3px 0,
-                          0 3px,
-                          3px 0;
+      background-size:    100% 8px,
+                          8px 0,
+                          0 8px,
+                          8px 0;
   }
   50% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          0 3px,
-                          3px 0;
+      background-size:    100% 8px,
+                          8px 100%,
+                          0 8px,
+                          8px 0;
   }
   75% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          100% 3px,
-                          3px 0;
+      background-size:    100% 8px,
+                          8px 100%,
+                          100% 8px,
+                          8px 0;
   }
   100% {
-      background-size:    100% 3px,
-                          3px 100%,
-                          100% 3px,
-                          3px 100%;
+      background-size:    100% 8px,
+                          8px 100%,
+                          100% 8px,
+                          8px 100%;
   }
 }
 
 .slide-1-border, .slide-2-border, .slide-3-border {
-  width: 45vw;
+  width: 40vw;
   padding: 2rem;
   display: flex;
-  height: 450px;
+  height: 500px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   background-repeat: no-repeat;
   background-image:   linear-gradient(to right,rgb(174, 145, 50) 100%,rgb(174, 145, 50) 100%),
                       linear-gradient(to bottom,rgb(174, 145, 50) 100%,rgb(174, 145, 50) 100%),
                       linear-gradient(to right,rgb(174, 145, 50) 100%,rgb(174, 145, 50) 100%),
                       linear-gradient(to bottom,rgb(174, 145, 50) 100%,rgb(174, 145, 50) 100%);
-  background-size:    100% 3px,
-                      3px 100%,
-                      100% 3px,
-                      3px 100%;
-  background-position:    0 0,
-                          100% 0,
-                          100% 100%,
-                          0 100%;
-  animation: bg 4s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  background-size:    100% 7px,
+                      7px 100%,
+                      100% 7px,
+                      7px 100%;
+  background-position:    100% 100%,
+                          0 100%,
+                          0 0,
+                          100% 0;
+  animation: bg 5s cubic-bezier(0.19, 1, 0.22, 1) 1;
   animation-delay: 0.35s;
   animation-play-state: running;
 }
 
+@media screen and (max-width: 767px) {
+  .slide-1-border, .slide-2-border, .slide-3-border {
+    background-image: none;
+    width: 90%;
+    height: auto;
+    padding-left: 5%;
+  }
+
+  p {
+    display: none;
+  }
+}
+
 /* FOOTER STYLE */
-.footer-link {
+/* .footer-link {
   color: rgb(61, 64, 66);
   font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.fa-chevron-right {
+  display: none;
 }
 
 .footer-link-icon {
@@ -255,8 +298,168 @@ a:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 575px) {
+  .fa-chevron-right {
+    display: block;
+  }
+
+  .responsive {
+    flex-direction: column;
+  }
+} */
+
+/* Timer */
+.timer-section {
+  /* background: rgb(17, 87, 64); */
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url(../../assets/time-left.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 130px;
+}
+
+.section-heading {
+  padding-left: 0px;
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.outer-block {
+  position: absolute;
+  background: #ffffff;
+  margin-top: 130px;
+}
+
+/* Stats */
+.stats-section {
+  /* background: rgb(17, 87, 64); */
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0) 100%), url("https://cdn.northerntrust.com/pws/nt/hero/cis-alt-asset-services-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5vh;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.stats-block-padding {
+  padding: 5rem 0 3rem 0;
+}
+
+.active-stats {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(174, 145, 50);
+}
+
+.outer-stats-block {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inner-stats-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-number-text {
+  font-size: 56px;
+  font-weight: bold;
+  color: rgb(61, 64, 66);
+}
+
+.stats-static-text {
+  font-size: 20px;
+  color: rgb(61, 64, 66);
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
-  .custom-padding {
-    display: none !important;
+  .stats-number-text {
+      font-size: 42px;
+  }
+  
+  .stats-static-text {
+      font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stats-number-text {
+      font-size: 28px;
+  }
+  
+  .stats-static-text {
+      font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {    
+  .stats-static-text {
+      font-size: 15px;
+  }
+}
+
+/* Our method section */
+.our-method-section {
+  background: rgb(17, 87, 64);
+  padding-top: 1.75rem;
+  margin-top: 5vh;
+}
+
+/* GLOBE */
+.globe {
+  width: 500px;
+  height: 425px; 
+  position: absolute;
+  right: 2%;
+  top: 12%;
+  z-index: 11;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 940px) {  
+  .globe {
+    right: 0%;
+  }
+}
+
+@media screen and (max-width: 900px) {  
+  .globe {
+    right: -2%;
+  }
+}
+
+@media screen and (max-width: 850px) {  
+  .globe {
+    width: 450px;
+    right: -4%;
+  }
+}
+
+@media screen and (max-width: 800px) {  
+  .globe {
+    width: 450px;
+    height: 400px;
+    right: -2%;
+    top: 16%;
+  }
+}
+
+@media screen and (max-width: 767px) {  
+  .globe {
+    width: 300px;
+    height: 300px;
+    right: 0%;
+    left: 0%;
+    top: 5%;
+    margin: 0 auto;
   }
 }

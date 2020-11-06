@@ -1,0 +1,5 @@
+<nav class="container" aria-label="breadcrumb" style="padding-top: 100px;">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" *ngFor="let breadcrumb of breadCrumbs"><a [href]="breadcrumb.url">{{breadcrumb.title}}</a></li>
+    </ol>
+</nav>

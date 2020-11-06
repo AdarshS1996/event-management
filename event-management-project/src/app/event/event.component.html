@@ -1,33 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light py-4 px-5">
-  <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png"
-      width="30" alt="" class="d-inline-block align-middle mr-2"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-lg fa-bars"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarToggler">
-    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Our Team &nbsp;<i class="fa fa-chevron-down"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Event Details &nbsp;<i class="fa fa-chevron-down"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Registration Forms &nbsp;<i class="fa fa-chevron-down"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-
-
-
-<div id="carousel" class="carousel slide" data-ride="carouse" data-interval="6000">
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6000">
   <ol class="carousel-indicators">
     <li data-target="#carousel" data-slide-to="0" class="active">
       <div class="progress-number">
@@ -35,7 +6,7 @@
         <div class="bar">
           <div class="in"></div>
         </div>
-        </div>
+      </div>
     </li>
     <li data-target="#carousel" data-slide-to="1">
       <div class="progress-number">
@@ -43,7 +14,7 @@
         <div class="bar">
           <div class="in"></div>
         </div>
-        </div>
+      </div>
     </li>
     <li data-target="#carousel" data-slide-to="2">
       <div class="progress-number">
@@ -51,33 +22,27 @@
         <div class="bar">
           <div class="in"></div>
         </div>
-        </div>
+      </div>
     </li>
   </ol>
 
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
+      <div id="chartdiv" class="globe"></div>
       <div class="carousel-caption">
-        <div class="slide-1-border">          
-            <h1>Celebration of Events</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at error, facilis nesciunt officiis
-              perspiciatis
-              repudiandae voluptates voluptatibus? Aperiam atque consectetur esse excepturi explicabo facilis labore
-              magnam
-              provident unde vitae.</p>
-            <span class="btn btn-sm btn-outline-secondary">Download the base event overview</span>
+        <div class="slide-1-border">
+          <h1>Celebration of Events in a Different Way</h1>
+          <p>We can put some tag line or sub heading here.</p>
+          <span class="btn btn-sm btn-outline-secondary">Download the base event overview</span>
         </div>
       </div>
     </div>
     <div class="carousel-item">
       <div class="carousel-caption justify-content-center align-items-center">
         <div class="slide-2-border">
-            <h1>Globe</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at error, facilis nesciunt officiis
-              perspiciatis
-              repudiandae voluptates voluptatibus? Aperiam atque consectetur esse excepturi explicabo facilis labore
-              magnam
-              provident unde vitae.</p>
+          <h1>Globe - Where we are in the World</h1>
+          <p>We can put some tag line or sub heading here.</p>
+            <span class="btn btn-sm btn-outline-secondary">Our Team</span>
         </div>
       </div>
     </div>
@@ -86,13 +51,9 @@
       </picture>
       <div class="carousel-caption justify-content-center align-items-center">
         <div class="slide-3-border">
-            <h1>Why</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at error, facilis nesciunt officiis
-              perspiciatis
-              repudiandae voluptates voluptatibus? Aperiam atque consectetur esse excepturi explicabo facilis labore
-              magnam
-              provident unde vitae.</p>
-              <span class="btn btn-sm btn-outline-secondary">Learn More</span>
+          <h1>Why we exist on this Planet</h1>
+          <p>We can put some tag line or sub heading here.</p>
+          <span class="btn btn-sm btn-outline-secondary">Learn More</span>
         </div>
       </div>
     </div>
@@ -103,24 +64,95 @@
 
 
 
-<div class="container custom-padding">
-  <div class="row d-flex justify-content-between pb-4">
-    <div class="col-md-4 col-sm-6 d-flex justify-content-between align-items-center">
-      <a class="footer-link" href="#">Join Us</a>
-      <a class="footer-link" href="#">Contact Us</a>
-      <a class="footer-link" href="#">About Us</a>
-    </div>
-    <div class="col-md-4 col-sm-6 d-flex justify-content-between">
-      <a class="footer-link" href="#"><i class="fa fa-2x fa-envelope footer-link-icon"></i></a>
-      <a class="footer-link" href="#"><i class="fa fa-2x fa-facebook-square footer-link-icon"></i></a>
-      <a class="footer-link" href="#"><i class="fa fa-2x fa-linkedin-square footer-link-icon"></i></a>
-      <a class="footer-link" href="#"><i class="fa fa-2x fa-twitter-square footer-link-icon"></i></a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-12 footer-text">
-      &copy; 2020 Public Speaking Summit. All Rights Reserved.
+<div class="timer-section">
+  <div class="container section-heading">Event date: '2021-09-22'!</div>
+  <div class="container outer-block">
+    <div class="row">
+      <div class="col-12">
+        <app-timer enddate="'2021-09-22'"></app-timer>
+      </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+<div class="stats-section">
+  <div class="container section-heading">Active Stats</div>
+  <div class="container outer-block">
+    <div class="row stats-block-padding">
+      <div class="col-12 outer-stats-block">
+        <div class="inner-stats-block">
+          <span class="stats-number-text">23</span><span class="stats-static-text">NO. OF ACTIVE EVENTS</span>
+        </div>
+        <div class="inner-stats-block">
+          <span class="stats-number-text">52</span><span class="stats-static-text">NO. OF MEMBERS</span>
+        </div>
+        <div class="inner-stats-block">
+          <span class="stats-number-text">1762</span><span class="stats-static-text">NO. OF PARTICIPANTS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="our-method-section">
+  <div class="container">
+    <div class="active-stats">Our Method</div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="bg-light position-relative px-3 my-5" style="background: rgb(174, 145, 50) !important;">
+          <div
+            class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
+            style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
+            1
+          </div>
+          <div class="px-3 text-center pb-3">
+            <h4>Headline</h4>
+            <p class="font-weight-light my-3">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+              deleniti et fugit iusto nesciunt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-light position-relative px-3 my-5" style="background: rgb(174, 145, 50) !important;">
+          <div
+            class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
+            style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
+            2
+          </div>
+          <div class="px-3 text-center pb-3">
+            <h4>Headline</h4>
+            <p class="font-weight-light my-3">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+              deleniti et fugit iusto nesciunt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-light position-relative px-3 my-5" style="background: rgb(174, 145, 50) !important;">
+          <div
+            class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
+            style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
+            3
+          </div>
+          <div class="px-3 text-center pb-3">
+            <h4>Headline</h4>
+            <p class="font-weight-light my-3">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+              deleniti et fugit iusto nesciunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+<!-- <div id="chartdiv" style="width: 100%; height: 500px; border: 1px solid red"></div> -->

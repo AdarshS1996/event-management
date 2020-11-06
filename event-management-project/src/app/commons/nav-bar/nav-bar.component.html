@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md navbar-light py-4 px-5" [ngClass]="changeBackground ? 'change-background' : ''">
+    <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png"
+        width="30" alt="" class="d-inline-block align-middle mr-2"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+      aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-lg fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="changeBackground ? 'nav-link-color' : ''" href>Event Details &nbsp;<i class="fa fa-chevron-down"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="changeBackground ? 'nav-link-color' : ''" [routerLink]="['registration']">Registration Forms &nbsp;<i class="fa fa-chevron-down"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="changeBackground ? 'nav-link-color' : ''" [routerLink]="['team']">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="changeBackground ? 'nav-link-color' : ''">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

@@ -6,12 +6,22 @@ import { AdminParticipantsComponent } from './admin-participants/admin-participa
 import { AdminUsersComponent } from './admin-users/admin-users.component';
 import { AdminComponent } from './admin/admin.component';
 import { EventsComponent } from './event/event.component';
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { TeamsComponent } from './team/team.component';
 
 
 const routes: Routes = [
   {
     path: 'home',
     component: EventsComponent
+  },
+  {
+    path: 'team',
+    component: TeamsComponent
+  },
+  {
+    path: 'registration',
+    component: RegistrationFormComponent
   },
   {
     path: 'admin',
@@ -22,6 +32,10 @@ const routes: Routes = [
       { path: 'participants', component: AdminParticipantsComponent },
       { path: 'users', component: AdminUsersComponent }
     ]
+  },
+  {
+    path: '**',
+    redirectTo: '/home'
   }
 ];
 
