@@ -140,7 +140,7 @@ h1 {
 .carousel-caption {
   left: 5%;
   text-align: left;
-  top: 300px;
+  top: 330px;
 }
 
 .carousel-indicators {
@@ -174,12 +174,16 @@ h1 {
   bottom: 40px;
 }
 
+.bar {
+  width: 135%;
+}
+
 .carousel-indicators .active .progress-number .bar {
   display: block;
   position: absolute;
   transform: rotateZ(-90deg);
-  left: -155px;
-  bottom: 150px;
+  left: -200px;
+  bottom: 180px;
   height: 8px;
   border: none;
   border-radius: 0px;

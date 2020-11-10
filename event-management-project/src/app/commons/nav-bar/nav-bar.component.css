@@ -4,10 +4,46 @@
     width: 100%;
   }
 
+  .show-navbar {
+    height: 100vh;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 18px;
+    background: #ffffff;
+    right: 34px;
+    padding: 13px
+  }
+
+  .navbar-nav-links {
+    display: flex;
+    height: 45vh;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+
+  .nav-link-align {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-nav-visible {
+    height: 100vh !important;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   .change-background {
     background: #ffffff;
     box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.3);
     color: rgb(61, 64, 66) !important;
+    stroke: rgb(61, 64, 66) !important;
   }
   
   .navbar-light .navbar-toggler {
@@ -35,7 +71,82 @@
     color: rgb(61, 64, 66) !important;
     transition: border 0.2s;
   }
-  
-  .navbar:hover div ul li .nav-link, .navbar:hover div ul li .nav-link i, .navbar:hover button i { 
-    color: rgb(61, 64, 66) !important; 
+
+  /* .navbar:hover div ul li .nav-link, .navbar:hover div ul li .nav-link i, .navbar:hover button svg { 
+    color: rgb(61, 64, 66) !important;
+    stroke: rgb(61, 64, 66) !important; 
+  } */
+
+  .change-background button svg {
+    stroke: rgb(61, 64, 66) !important; 
+  }
+
+  .footer-background {
+    background: rgb(242, 242, 242);
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    padding: 0px 28px;
+    bottom: 87px;
+  }
+
+  .outer-navbar-footer {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .navbar-footer {
+    flex-direction: column;
+    height: 25vh;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .footer-link {
+    color: rgb(61, 64, 66);
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+  }
+
+  .footer-text {
+    color: rgb(61, 64, 66);
+    text-align: center;
+    font-size: 11px;
+  }
+
+  @media screen and (min-width: 768px) {  
+    .display-none {
+      display: none;
+    }
+
+    .navbar:hover div ul li .nav-link, .navbar:hover div ul li .nav-link i, .navbar:hover button svg { 
+      color: rgb(61, 64, 66) !important;
+      stroke: rgb(61, 64, 66) !important; 
+    }
+  }
+
+  @media screen and (max-width: 768px) {  
+    .navbar-nav-links {
+      margin-top: 3rem !important;
+    }
+
+    .nav-link {
+      font-size: 20px;
+      margin-left: 0rem;
+      padding: 0.2rem 0rem !important;
+    }
+
+    .navbar:hover div ul li .nav-link, .navbar:hover div ul li .nav-link i, .navbar:hover button svg { 
+      color: rgb(61, 64, 66) !important;
+      stroke: rgb(61, 64, 66) !important; 
+    }
+
+    .navbar div ul li .nav-link, .navbar div ul li .nav-link i { 
+      color: rgb(61, 64, 66) !important;
+      stroke: rgb(61, 64, 66) !important; 
+    }
   }
