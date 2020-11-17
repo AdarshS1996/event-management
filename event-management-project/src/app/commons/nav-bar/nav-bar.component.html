@@ -12,16 +12,18 @@
       </a>
       <ul class="navbar-nav ml-auto mt-lg-0" [ngClass]="isMenuVisible ? 'navbar-nav-links': ''">
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" data-target="#navbarToggler" [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''" [ngClass]="isMenuVisible ? 'nav-link-align' : ''">Event Details &nbsp;<i class="fa fa-chevron-down"></i></a>
+          <a class="nav-link" data-toggle="collapse" data-target="#navbarToggler" [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''" [ngClass]="isMenuVisible ? 'nav-link-align' : ''" [routerLink]="['event-details']">Event Details</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" data-target="#navbarToggler" [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''"  [ngClass]="isMenuVisible ? 'nav-link-align' : ''" [routerLink]="['registration']">Registration Forms &nbsp;<i class="fa fa-chevron-down"></i></a>
+          <a class="nav-link" data-toggle="collapse" data-target="#navbarToggler" [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''"  [ngClass]="isMenuVisible ? 'nav-link-align' : ''" [routerLink]="['registration']">Register for Events
+             <!-- &nbsp;<i class="fa fa-chevron-down"></i> -->
+            </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" data-target="#navbarToggler" [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''"  [ngClass]="isMenuVisible ? 'nav-link-align' : ''" [routerLink]="['team']">Our Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" data-target="#navbarToggler" [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''"  [ngClass]="isMenuVisible ? 'nav-link-align' : ''">About Us</a>
+          <a class="nav-link" data-toggle="collapse" data-target="#navbarToggler" [ngClass]="changeBackgroundOnRoute ? 'nav-link-color' : ''"  [ngClass]="isMenuVisible ? 'nav-link-align' : ''" [routerLink]="['about-us']">About Us</a>
         </li>
       </ul>
       
@@ -29,9 +31,9 @@
       <div class="container-lg outer-navbar-footer display-none">
         <div class="row w-100">
           <div class="col-12 d-flex navbar-footer">
-            <a class="footer-link" href="#">Join Us &nbsp;<i class="fa fa-chevron-right" style="color: rgb(61, 64, 66);"></i></a>
-            <a class="footer-link" href="#">Contact Us &nbsp;<i class="fa fa-chevron-right" style="color: rgb(61, 64, 66);"></i></a>
-            <a class="footer-link" href="#">About Us &nbsp;<i class="fa fa-chevron-right" style="color: rgb(61, 64, 66);"></i></a>
+            <a class="footer-link" href="#">Join Us&nbsp;<i class="fa fa-chevron-right" style="color: rgb(61, 64, 66);"></i></a>
+            <a class="footer-link" href="#">Contact Us&nbsp;<i class="fa fa-chevron-right" style="color: rgb(61, 64, 66);"></i></a>
+            <a class="footer-link" href="#">About Us&nbsp;<i class="fa fa-chevron-right" style="color: rgb(61, 64, 66);"></i></a>
           </div>
         </div>
 

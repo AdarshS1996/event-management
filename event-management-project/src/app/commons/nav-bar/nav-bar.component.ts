@@ -16,7 +16,8 @@ export class NavbarComponent {
   constructor(public router: Router) { 
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        if (event.url === '/team' || event.url === '/registration') {
+        console.log(event.url);
+        if (event.url === '/team' || event.url.includes('/registration') || event.url === '/about-us' || event.url === '/event-details') {
           this.changeBackgroundOnRoute = true;
         } else {
           this.changeBackgroundOnRoute = false;
@@ -34,6 +35,15 @@ export class NavbarComponent {
       this.isMenuVisible = false;
     }
   }
+
+  // @HostListener('window:scroll', ['$event']) 
+  // doSomething(event) {
+  //   if (window.pageYOffset > 5) {
+  //     this.isMenuVisible = true;
+  //   } else if (window.pageYOffset <= 5) {
+  //     this.isMenuVisible = false;
+  //   }
+  // }
 
   ngOnInit() {
   }

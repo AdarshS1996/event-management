@@ -1,6 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, ElementRef, HostListener } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { BreadcrumbsEnum } from './breadcrumbs.enum';
 
 declare var $: any;
@@ -12,15 +12,20 @@ declare var $: any;
 })
 export class BreadcrumbsComponent {
   urls: string[];
+  eventName: string;
+  currentPageTitle: any;
   breadCrumbs: any[] = [{
     title: 'Home',
     url: '/home' 
   }];
 
-  constructor(public router: Router) { 
+  constructor(public router: Router,
+    private activatedRoute: ActivatedRoute) { 
+      this.activatedRoute.params.subscribe(params => {
+        this.eventName = params['eventId'];
+      });
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        console.log(event.url);
         let roughUrls = event.url.split('/');
         this.urls = roughUrls.splice(1,);
       }
@@ -35,5 +40,12 @@ export class BreadcrumbsComponent {
         url: `/${url}`
       });
     });
+    if (this.eventName === undefined) {
+      this.currentPageTitle = this.breadCrumbs[this.breadCrumbs.length - 1].title;
+      this.breadCrumbs.pop();
+    } else {
+      this.breadCrumbs.pop();
+      this.currentPageTitle = this.eventName + ' Registration';
+    }
   }
 }

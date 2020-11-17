@@ -40,8 +40,8 @@
   }
 
   .change-background {
-    background: #ffffff;
-    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.3);
+    background: #ffffff !important;
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.3) !important;
     color: rgb(61, 64, 66) !important;
     stroke: rgb(61, 64, 66) !important;
   }
@@ -71,11 +71,6 @@
     color: rgb(61, 64, 66) !important;
     transition: border 0.2s;
   }
-
-  /* .navbar:hover div ul li .nav-link, .navbar:hover div ul li .nav-link i, .navbar:hover button svg { 
-    color: rgb(61, 64, 66) !important;
-    stroke: rgb(61, 64, 66) !important; 
-  } */
 
   .change-background button svg {
     stroke: rgb(61, 64, 66) !important; 
@@ -118,6 +113,13 @@
     font-size: 11px;
   }
 
+  @media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .nav-link{ color: #fff;  }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    .navbar .nav-item .dropdown-menu{ margin-top:0; }
+  }
+
   @media screen and (min-width: 768px) {  
     .display-none {
       display: none;
@@ -138,6 +140,10 @@
       font-size: 20px;
       margin-left: 0rem;
       padding: 0.2rem 0rem !important;
+    }
+
+    .nav-link:hover {
+      padding-left: 15px !important;
     }
 
     .navbar:hover div ul li .nav-link, .navbar:hover div ul li .nav-link i, .navbar:hover button svg { 

@@ -237,10 +237,10 @@ h1 {
                       linear-gradient(to bottom,rgb(174, 145, 50) 100%,rgb(174, 145, 50) 100%),
                       linear-gradient(to right,rgb(174, 145, 50) 100%,rgb(174, 145, 50) 100%),
                       linear-gradient(to bottom,rgb(174, 145, 50) 100%,rgb(174, 145, 50) 100%);
-  background-size:    100% 7px,
-                      7px 100%,
-                      100% 7px,
-                      7px 100%;
+  background-size:    100% 8px,
+                      8px 100%,
+                      100% 8px,
+                      8px 100%;
   background-position:    100% 100%,
                           0 100%,
                           0 0,

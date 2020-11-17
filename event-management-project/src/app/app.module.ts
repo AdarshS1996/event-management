@@ -15,6 +15,12 @@ import { FooterComponent } from './commons/footer/footer.component';
 import { TeamsComponent } from './team/team.component';
 import { BreadcrumbsComponent } from './commons/breadcrumbs/breadcrumbs.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { EventDetailsComponent } from './event-details/event-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegisterEventsComponent } from './register-events/register-events.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,10 @@ import { RegistrationFormComponent } from './registration-form/registration-form
     BreadcrumbsComponent,
     EventsComponent,
     TeamsComponent,
+    RegisterEventsComponent,
     RegistrationFormComponent,
+    AboutUsComponent,
+    EventDetailsComponent,
     AdminComponent,
     AdminHomeComponent,
     AdminEventsComponent,
@@ -34,7 +43,11 @@ import { RegistrationFormComponent } from './registration-form/registration-form
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    ReactiveFormsModule,
+    NgxIntlTelInputModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
