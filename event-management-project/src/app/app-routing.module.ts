@@ -10,6 +10,10 @@ import { EventsComponent } from './event/event.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: EventsComponent
+  },
+  {
     path: 'home',
     component: EventsComponent
   },

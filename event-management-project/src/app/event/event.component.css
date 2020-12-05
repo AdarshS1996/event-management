@@ -2,10 +2,14 @@
 .custom-navbar {
     /* background: rgba(0,0,0,0.05); */
     left: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 99;
     top: 0;
+    transition: background linear 0.2s;
+}
+.navbar-inverse{
+   background-color: #264a99;
 }
 
 .margin-top {
