@@ -1,0 +1,128 @@
+.header {
+    background: #115740;
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin: 3rem 0rem 1.5rem 0rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.sub-header {
+    max-width: 750px;
+}
+
+.sub-heading {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.outer-section {
+    padding-top: 16rem;
+}
+
+.inner-section {
+    background: #ffffff;
+}
+
+@media screen and (max-width: 575px) {
+    .sub-header {
+        display: none;
+    }
+
+    .outer-section {
+        padding-top: 9.5rem;
+    }
+}
+
+
+/* BUTTONS */
+.btn-primary {
+    border: none;
+    border-radius: 0px;
+    background-color: #115740;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: rgb(9, 59, 43);
+}
+
+.btn-secondary {
+    border: none;
+    border-radius: 0px;
+    background-color: rgb(10, 122, 130);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: background-color 0.75s;
+}
+
+.btn-secondary:hover {
+    background-color: #05373b;
+}
+
+.btn-danger {
+    border: none;
+    border-radius: 0px;
+    background-color: #dc3545;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all 0.5s;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+}
+/* BUTTONS */
+
+/* INPUT FIELDS */
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #115740;
+    transform: all 0.5s;  
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #115740;
+}
+
+.required {
+    color: #dc3545;
+}
+
+.form-check-label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+::ng-deep .iti {
+    width: 100%;
+}
+
+::ng-deep input[type="tel"] {
+    width: 100% !important;
+    border: none;
+    border-bottom: 1px solid #115740;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0px;
+}
+
+::ng-deep input[type="tel"]:focus {
+    border: none;
+    border-bottom: 2px solid #115740;
+    outline: none !important;
+}
+/* INPUT FIELDS */

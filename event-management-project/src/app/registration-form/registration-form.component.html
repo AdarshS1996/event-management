@@ -1,0 +1,86 @@
+<app-breadcrumbs></app-breadcrumbs>
+
+
+
+
+<div>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 heading">
+                    {{eventName}} Registration
+                </div>
+                <div class="col-12 sub-header">
+                    <div class="sub-heading">
+                        Dummy content: Content will be replaced by event description
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="outer-section">
+        <div class="container">
+
+
+            <div class="row inner-section p-5">
+                <div class="col-12">
+                    <form [formGroup]="registrationForm">
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name<span class="required"> *</span></label>
+                            <input type="text" class="form-control" id="exampleInputName1" formControlName="name" placeholder="Enter your name">
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address<span class="required"> *</span></label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email" aria-describedby="emailHelp" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number<span class="required"> *</span></label>
+                            <div id="phoneNumber">
+                                <ngx-intl-tel-input 
+                                    [cssClass]="'custom'"
+                                    [preferredCountries]="preferredCountries"
+                                    [enableAutoCountrySelect]="true"
+                                    [enablePlaceholder]="true"
+                                    [searchCountryFlag]="true"
+                                    [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+                                    [selectFirstCountry]="false"
+                                    [maxLength]="15"
+                                    [tooltipField]="TooltipLabel.Name"
+                                    [phoneValidation]="true"
+                                    [separateDialCode]="true"
+                                    name="phone"
+                                    formControlName="phoneNumber">
+                                </ngx-intl-tel-input>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Category<span class="required"> *</span></label>
+                            <select class="form-control" id="exampleFormControlSelect1" formControlName="category">
+                              <option value="" disabled selected>Choose one</option>
+                              <option value="first">1</option>
+                              <option value="sec">2</option>
+                              <option value="thirs">3</option>
+                              <option value="forth">4</option>
+                              <option value="fifth">5</option>
+                            </select>
+                          </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="agreeTerms">
+                          <label class="form-check-label" for="exampleCheck1">I Agree all the terms and conditions.<span class="required"> *</span></label>
+                        </div>
+                        <div class="float-right">
+                            <button class="btn btn-danger mr-4 mb-2">Cancel</button>
+                            <button class="btn btn-secondary mr-4 mb-2" (click)="resetRegisterForm()">Reset Form</button>
+                            <button class="btn btn-primary mb-2" (click)="register()">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+</div>

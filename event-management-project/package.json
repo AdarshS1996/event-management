@@ -4,13 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --build-optimizer=false",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
+    "@amcharts/amcharts4": "^4.10.9",
+    "@amcharts/amcharts4-geodata": "^4.1.18",
     "@angular/animations": "~9.1.1",
     "@angular/common": "~9.1.1",
     "@angular/compiler": "~9.1.1",
@@ -21,7 +23,11 @@
     "@angular/router": "~9.1.1",
     "bootstrap": "^4.5.2",
     "chart.js": "^2.9.3",
+    "google-libphonenumber": "^3.2.15",
+    "intl-tel-input": "^17.0.3",
     "jquery": "^3.5.1",
+    "ngx-bootstrap": "^6.2.0",
+    "ngx-intl-tel-input": "^3.0.3",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

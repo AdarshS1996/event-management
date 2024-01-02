@@ -1,0 +1,52 @@
+<app-breadcrumbs></app-breadcrumbs>
+
+
+
+
+<div>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 heading">
+                    Register for Events
+                </div>
+                <div class="col-12 sub-header">
+                    <div class="sub-heading">
+                        Dummy content: Our team of experts spans the globe. We are proactive analyzers and interpreters,
+                        dedicated to providing insightful guidance backed by deep experience.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="outer-section">
+        <div class="container">
+
+
+            <div class="row inner-section p-5">
+                <div class="col-md-12 col-sm-12 col-xs-12 topic-heading">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 topic-content h-100"
+                            *ngFor="let eventDetail of eventDetails">
+                            <div class="card">
+                                <div class="content">
+                                    <h6>{{eventDetail.name}}</h6>
+                                    <div class="hover_content">
+                                        <p>{{eventDetail.description}}</p>
+                                        <button class="btn btn-primary" (click)="Register(eventDetail)">Register Now!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+</div>

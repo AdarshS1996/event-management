@@ -1,230 +1,158 @@
-<div class="bg">
-    <nav class="navbar navbar-expand-lg py-4 navbar-dark custom-navbar">
-      <div class="container">
-        <a href="#" class="navbar-brand">
-  
-          <img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png" width="45" alt=""
-            class="d-inline-block align-middle mr-2">
-        </a>
-  
-        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-          class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-  
-        <div id="navbarSupportedContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto margin-top">
-            <li class="nav-item mx-2"><a class="nav-link" (click)="onClickScroll('home')">Home</a></li>
-            <li class="nav-item mx-2"><a class="nav-link" (click)="onClickScroll('about-us')">About Us</a></li>
-            <li class="nav-item mx-2"><a class="nav-link" (click)="onClickScroll('events')">Events</a></li>
-            <li class="nav-item mx-2"><a class="nav-link" (click)="onClickScroll('testimonials')">Testimonials</a></li>
-            <li class="nav-item mx-2"><a class="nav-link" (click)="onClickScroll('team')">Team</a></li>
-            <li class="ml-2 register-button"><button class="btn btn-primary">Register For Event!</button></li>
-          </ul>
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active">
+      <div class="progress-number">
+        01
+        <div class="bar">
+          <div class="in"></div>
         </div>
       </div>
-    </nav>
-  
-    <div class="container" id="home">
-      <div class="row responsive-align">
-        <div class="col-md-12 heading-section">
-          <div class="heading">Public Speaking Forum</div>
-          <div class="sub-heading">Everything You Think. To Start Telling Beautifully</div>
-          <div>
-            <button class="btn btn-primary">Register Now</button>
-          </div>
+    </li>
+    <li data-target="#carousel" data-slide-to="1">
+      <div class="progress-number">
+        02
+        <div class="bar">
+          <div class="in"></div>
         </div>
-        <!-- <div class="col-md-5">
-          <img src="../../assets/Group therapy-rafiki.svg" />
-        </div> -->
+      </div>
+    </li>
+    <li data-target="#carousel" data-slide-to="2">
+      <div class="progress-number">
+        03
+        <div class="bar">
+          <div class="in"></div>
+        </div>
+      </div>
+    </li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div id="chartdiv" class="globe"></div>
+      <div class="carousel-caption">
+        <div class="slide-1-border">
+          <h1>Celebration of Public Summit</h1>
+          <p>We can put some tag line or sub heading here.</p>
+          <span class="btn btn-sm btn-outline-secondary">Download the base event overview</span>
+        </div>
       </div>
     </div>
-  
-  </div>
-  
-  <div class="container text-center" id="about-us">
-    <h1>
-      Who are we ?
-    </h1>
-    <div class="line-shape">
-    </div>
-    <div class="content-section pb-5 row">
-      <div class="col-md-5">
-        <img class="doodle" src="../../assets/About us page-amico.svg" />
-      </div>
-      <div class="col-md-7 align-self-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+    <div class="carousel-item">
+      <div class="carousel-caption justify-content-center align-items-center">
+        <div class="slide-2-border">
+          <h1>Out partner Countries</h1>
+          <p>We can put some tag line or sub heading here.</p>
+            <span class="btn btn-sm btn-outline-secondary">Our Team</span>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="container text-center" id="events">
-    <h1>
-      Our Events
-    </h1>
-    <div class="line-shape">
-    </div>
-    <div class="content-section row">
-  
-      <div class="col-md-3 col-sm-6 col-xs-12 pb-4">
-        <div class="card">
-          <div class="card-body">
-            <h4>Youth Parliament Debate</h4>
-          </div>
+    <div class="carousel-item">
+      <picture>
+      </picture>
+      <div class="carousel-caption justify-content-center align-items-center">
+        <div class="slide-3-border">
+          <h1>Why Public Speaking Summit ?</h1>
+          <p>We can put some tag line or sub heading here.</p>
+          <span class="btn btn-sm btn-outline-secondary">Learn More</span>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 pb-4">
-        <div class="card">
-          <div class="card-body">
-            <h4>Model United Nations</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 pb-4">
-        <div class="card">
-          <div class="card-body">
-            <h4>Public Forum Debate</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 pb-4">
-        <div class="card">
-          <div class="card-body">
-            <h4>Explore More Events</h4>
-          </div>
-        </div>
-      </div>
-  
-      
-  
     </div>
   </div>
-  
-  <div class="container text-center" id="testimonials">
-    <h1>
-      Testimonials
-    </h1>
-    <div class="line-shape mb-2">
-    </div>
-    <div class="content-section row responsive-align">
-  
-  <div class="col-md-7">
-      <div class="slider">
-        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
-        <input type="radio" name="slider" title="slide2" class="slider__nav" />
-        <input type="radio" name="slider" title="slide3" class="slider__nav" />
-        <input type="radio" name="slider" title="slide4" class="slider__nav" />
-        <div class="slider__inner">
-          <div class="slider__contents">
-            <i class="slider__image fa fa-quote-left"></i>
-            <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus
-              illo quos, corporis minima!</p>
-          </div>
-          <div class="slider__contents">
-            <i class="slider__image fa fa-quote-left"></i>
-            <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus
-              illo quos, corporis minima!</p>
-          </div>
-          <div class="slider__contents">
-            <i class="slider__image fa fa-quote-left"></i>
-            <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus
-              illo quos, corporis minima!</p>
-          </div>
-          <div class="slider__contents">
-            <i class="slider__image fa fa-quote-left"></i>
-            <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus
-              illo quos, corporis minima!</p>
-          </div>
-        </div>
+</div>
+
+
+
+
+
+<div class="timer-section">
+  <div class="container section-heading">Event date: '2021-09-22'!</div>
+  <div class="container outer-block">
+    <div class="row">
+      <div class="col-12">
+        <app-timer enddate="'2021-09-22'"></app-timer>
       </div>
-    </div>
-  
-    <div class="col-md-5">
-      <img class="doodle" src="../../assets/Email campaign-rafiki.svg" />
-    </div>
-  
-  
     </div>
   </div>
-  
-  <div class="container text-center" id="team">
-    <h1>
-      Our team
-    </h1>
-    <div class="line-shape">
-    </div>
-    <div class="content-section row pb-4">
-  
-  
-      <div class="col-md-3 col-sm-6 col-xs-6 pb-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="../../assets/team-1.jpg" alt="Avatar" class="avatar">
-            <h5 class="pt-4" class="pt-4">Team member #1</h5>
-            <h6>Co-Founder</h6>
-          </div>
+</div>
+
+
+
+
+
+<div class="stats-section">
+  <div class="container section-heading">Active Stats</div>
+  <div class="container outer-block">
+    <div class="row stats-block-padding">
+      <div class="col-12 outer-stats-block">
+        <div class="inner-stats-block">
+          <span class="stats-number-text">23</span><span class="stats-static-text">NO. OF ACTIVE EVENTS</span>
+        </div>
+        <div class="inner-stats-block">
+          <span class="stats-number-text">52</span><span class="stats-static-text">NO. OF MEMBERS</span>
+        </div>
+        <div class="inner-stats-block">
+          <span class="stats-number-text">1762</span><span class="stats-static-text">NO. OF PARTICIPANTS</span>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-6 pb-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="../../assets/team-2.jpg" alt="Avatar" class="avatar">
-            <h5 class="pt-4">Team member #2</h5>
-            <h6>Tech Advisor</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6 pb-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="../../assets/team-3.jpg" alt="Avatar" class="avatar">
-            <h5 class="pt-4">Team member #3</h5>
-            <h6>Technical Architect</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6 pb-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="../../assets/team-4.jpg" alt="Avatar" class="avatar">
-            <h5 class="pt-4">Team member #4</h5>
-            <h6>Delivery Manager</h6>
-          </div>
-        </div>
-      </div>
-  
-  
     </div>
   </div>
-  
-  <footer>
-    <div class="container">
-      <div class="row py-5">
-      <div class="col-md-6">
-        <img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png" width="40" alt=""
-            class="d-inline-block align-middle mb-4">
-            <h4 class="mb-4">Public speaking forum</h4>
-            <button class="btn btn-primary">Register Now</button>
+</div>
+
+
+
+
+
+<!-- <div class="our-method-section">
+  <div class="container">
+    <div class="active-stats">Our Method</div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="bg-light position-relative px-3 my-5" style="background: rgb(174, 145, 50) !important;">
+          <div
+            class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
+            style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
+            1
+          </div>
+          <div class="px-3 text-center pb-3">
+            <h4>Headline</h4>
+            <p class="font-weight-light my-3">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+              deleniti et fugit iusto nesciunt.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h3 class="mb-4 responsive-margin">Get in touch with us!</h3>
-        <div class="mb-3"><i class="fa fa-phone pr-1"></i><strong>Phone number:</strong> +91 987654321</div>
-        <div class="mb-3"><i class="fa fa-envelope pr-1"></i><strong>Email:</strong> publicsummit@gmail.com</div>
-        <div class="row d-flex">
-          <div class="px-3 py-2"><i class="fa fa-lg fa-facebook"></i></div>
-          <div class="px-3 py-2"><i class="fa fa-lg fa-instagram"></i></div>
-          <div class="px-3 py-2"><i class="fa fa-lg fa-linkedin"></i></div>
-          <div class="px-3 py-2"><i class="fa fa-lg fa-envelope"></i></div>
+      <div class="col-md-4">
+        <div class="bg-light position-relative px-3 my-5" style="background: rgb(174, 145, 50) !important;">
+          <div
+            class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
+            style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
+            2
+          </div>
+          <div class="px-3 text-center pb-3">
+            <h4>Headline</h4>
+            <p class="font-weight-light my-3">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+              deleniti et fugit iusto nesciunt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-light position-relative px-3 my-5" style="background: rgb(174, 145, 50) !important;">
+          <div
+            class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
+            style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
+            3
+          </div>
+          <div class="px-3 text-center pb-3">
+            <h4>Headline</h4>
+            <p class="font-weight-light my-3">Lorem ipsum dolor sit consectetur adipisicing elit. Alias amet
+              deleniti et fugit iusto nesciunt.</p>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    <div class="footer">
-      Copyright &#169; Public Speaking Forum. Designed by - Designer Name
-    </div>
-  </footer>
-  
-  <a class="move-top" (click)="scrollToTop()" [ngClass]="isScrollToTopVisible ? '' : 'd-none'">
-    <i class="fa fa-lg fa-angle-up"></i>
-  </a>
+  </div>
+</div> -->
+
+
+
+
+<!-- <div id="chartdiv" style="width: 100%; height: 500px; border: 1px solid red"></div> -->

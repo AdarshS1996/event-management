@@ -1,0 +1,12 @@
+.breadcrumb {
+    background: transparent;
+    padding: 0.75rem 0rem;
+}
+
+a {
+    color: rgb(61, 64, 66) !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgb(177, 177, 177) !important;
+}
